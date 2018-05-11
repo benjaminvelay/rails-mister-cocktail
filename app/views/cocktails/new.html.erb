@@ -1,0 +1,6 @@
+<small><%= link_to 'main page', cocktails_path %></small>
+
+<%= simple_form_for @cocktail do |form| %>
+  <%= form.input :name %>
+  <%= form.submit %>
+<% end %>

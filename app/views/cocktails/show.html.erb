@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <h1><%=@cocktail.name%></h1>
+      <%= Link_to 'Back', root_path %>
+    </div>
+  </div>
+</div>
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+
+
+
